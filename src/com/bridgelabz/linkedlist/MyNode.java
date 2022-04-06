@@ -3,7 +3,7 @@ package com.bridgelabz.linkedlist;
 public class MyNode {
 
 	public int data;
-	public Node next;
+	public MyNode next;
 
 	public MyNode(int data) {
 		this.data = data;
