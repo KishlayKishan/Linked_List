@@ -70,4 +70,13 @@ public class Operations {
 		linkedList.deleteANode(40);
 		linkedList.print();
 	}
+
+	public static void sortList() {
+		System.out.println("before sorting the list");
+		LinkedList linkedList = insertAfterSearchNode();
+		linkedList.sort();
+		System.out.println("after sorting the list");
+		linkedList.print();
+
+	}
 }
