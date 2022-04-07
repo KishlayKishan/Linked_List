@@ -6,12 +6,13 @@ package com.bridgelabz.linkedlist;
  */
 
 public class Operations {
-	public static void addDataAtStart() {
+	public static LinkedList addDataAtStart() {
 		LinkedList linkedList = new LinkedList();
 		linkedList.push(70);
 		linkedList.push(30);
 		linkedList.push(56);
 		linkedList.print();
+		return linkedList;
 	}
 
 	public static void addDataAtEnd() {
@@ -36,8 +37,20 @@ public class Operations {
 
 	}
 
-	public static void deletelastNode() {
-		// TODO Auto-generated method stub
+	public static void deleteFirstNode() {
+		LinkedList linkedList = addDataAtStart();
+		linkedList.pop();
+		linkedList.print();
+	}
 
+	public static void deleteLastNode() {
+		LinkedList linkedList = addDataAtStart();
+		linkedList.popLast();
+		linkedList.print();
+	}
+
+	public static void findNodeBasedOnValue() {
+		LinkedList linkedList = addDataAtStart();
+		linkedList.searchNode(30);
 	}
 }
