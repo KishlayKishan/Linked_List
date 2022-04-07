@@ -61,7 +61,7 @@ public class LinkedList {
 		tempNode.next = null;
 	}
 
-	public void searchNode(int value) {
+	public MyNode searchNode(int value) {
 		MyNode tempNode = head;
 		int index = 1;
 		boolean flag = false;
@@ -82,5 +82,24 @@ public class LinkedList {
 		} else {
 			System.out.println("Element is not present");
 		}
+		return tempNode;
+	}
+
+	public MyNode searchNodeAt(int value, MyNode newNode) {
+		MyNode tempNode = head;
+		if (head == null) {
+			System.out.println("List is empty");
+		} else {
+			while (tempNode != null) {
+				if (tempNode.data == value) {
+					break;
+				}
+				tempNode = tempNode.next;
+			}
+			MyNode tempNodeNext = tempNode.next;
+			tempNode.next = newNode;
+			newNode.next = tempNodeNext;
+		}
+		return tempNode;
 	}
 }
