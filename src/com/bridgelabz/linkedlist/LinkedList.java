@@ -1,7 +1,6 @@
 package com.bridgelabz.linkedlist;
 
 public class LinkedList {
-
 	MyNode head;
 	MyNode tail;
 
@@ -28,6 +27,10 @@ public class LinkedList {
 			}
 
 		}
+	}
+
+	public void append(int i) {
+
 	}
 
 }
