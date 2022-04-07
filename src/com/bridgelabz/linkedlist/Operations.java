@@ -35,4 +35,9 @@ public class Operations {
 		linkedList.print();
 
 	}
+
+	public static void deleteFirstNode() {
+		// TODO Auto-generated method stub
+
+	}
 }
