@@ -4,7 +4,7 @@ public class LinkedList {
 	MyNode head;
 	MyNode tail;
 
-	public void push(int data) {
+	public MyNode push(int data) {
 		MyNode newNode = new MyNode(data);
 		if (head == null) {
 			head = newNode;
@@ -14,6 +14,7 @@ public class LinkedList {
 			this.head = newNode;
 			newNode.next = temp;
 		}
+		return newNode;
 	}
 
 	public void print() {
@@ -29,7 +30,21 @@ public class LinkedList {
 		}
 	}
 
-	public void append(int i) {
+	public void append(int data) {
+		MyNode newNode = new MyNode(data);
+		if (head == null) {
+			head = newNode;
+			tail = newNode;
+		} else {
+			this.tail.next = newNode;
+			tail = newNode;
+		}
+	}
+
+	public void insertInBetween(MyNode previousNode, MyNode newNode) {
+		MyNode tempNode = previousNode.next;
+		previousNode.next = newNode;
+		newNode.next = tempNode;
 
 	}
 

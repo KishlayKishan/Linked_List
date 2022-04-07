@@ -22,4 +22,17 @@ public class Operations {
 		linkedList.append(70);
 		linkedList.print();
 	}
+
+	public static void insertInBetween() {
+		LinkedList linkedList = new LinkedList();
+		MyNode secondNode = linkedList.push(70);
+		MyNode firstNode = linkedList.push(56);
+		MyNode newNode = new MyNode(30);
+		System.out.println("Before:");
+		linkedList.print();
+		linkedList.insertInBetween(firstNode, newNode);
+		System.out.println("\nAfter:");
+		linkedList.print();
+
+	}
 }
