@@ -36,7 +36,7 @@ public class Operations {
 
 	}
 
-	public static void deleteFirstNode() {
+	public static void deletelastNode() {
 		// TODO Auto-generated method stub
 
 	}
